@@ -8,6 +8,7 @@
         Title="Recipe App" Height="700" Width="1100"
          Loaded="Window_Loaded">
     <Grid Background="#EEEEEE" RenderTransformOrigin="0.952,1.002">
+        
 
         <Grid.RowDefinitions>
             <RowDefinition Height="44*"/>
@@ -37,6 +38,8 @@
             </Rectangle.RenderTransform>
         </Rectangle>
 
+        
+
         <Label Content="Papa Brenth's Recipe App" FontSize ="40" HorizontalAlignment="Left" VerticalAlignment="Top" 
                RenderTransformOrigin="0.126,0.272" Foreground="#00ADB5" FontWeight="Bold" FontFamily="Segoe UI Historic" Height="61" Width="488" Margin="10,46,0,0" Grid.RowSpan="2"/>
 
@@ -57,6 +60,9 @@
 
 
 
+        <Button  x:Name="btnAbout" Content="About" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#EEEEEE" Background="#00ADB5" Height="37" Width="144" Click="btnAbout_Click" Grid.Column="1" Margin="17,0,0,0" />
+
+
 
 
 
@@ -71,6 +77,8 @@
         <!---LIST BOX-->
         <ListBox x:Name="lstDisplayDetails" FontSize="13" Margin="10,77,0,10" BorderBrush="#222831" Grid.RowSpan="8" Grid.Row="1"/>
 
-
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden">
+            <!-- Your other content goes here -->
+        </Frame>
     </Grid>
 </Window>

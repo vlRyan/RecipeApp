@@ -1,12 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 
 namespace st10090477_PROG6221_POE_GROUP_2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private List<Ingredient> allIngredients;
@@ -22,6 +20,13 @@ namespace st10090477_PROG6221_POE_GROUP_2
             InitializeComponent();
             this.Loaded += Window_Loaded;
 
+        }
+
+        private void btnAbout_Click(object sender, RoutedEventArgs e)
+        {
+            // Assuming you have a Frame named "MainFrame" in your MainWindow
+            About aboutWindow = new About();
+            aboutWindow.ShowDialog();
         }
 
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)

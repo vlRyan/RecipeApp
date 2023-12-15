@@ -22,3 +22,5 @@ C:\Users\user\Desktop\Recipe-App\PapaBrenthRecipeApp\obj\Debug\PapaBrenthRecipeA
 C:\Users\user\Desktop\Recipe-App\PapaBrenthRecipeApp\obj\Debug\PapaBrenthRecipeApp.csproj.CopyComplete
 C:\Users\user\Desktop\Recipe-App\PapaBrenthRecipeApp\obj\Debug\st10090477_PROG6221_POE_GROUP_2.exe
 C:\Users\user\Desktop\Recipe-App\PapaBrenthRecipeApp\obj\Debug\st10090477_PROG6221_POE_GROUP_2.pdb
+C:\Users\user\Desktop\Recipe-App\PapaBrenthRecipeApp\obj\Debug\About.g.cs
+C:\Users\user\Desktop\Recipe-App\PapaBrenthRecipeApp\obj\Debug\About.baml
