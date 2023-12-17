@@ -1,0 +1,84 @@
+﻿<Window x:Class="RecipeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp"
+        mc:Ignorable="d"
+        Title="Recipe App" Height="700" Width="1100"
+         Loaded="Window_Loaded">
+    <Grid Background="#EEEEEE" RenderTransformOrigin="0.952,1.002">
+        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="78*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="897"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="0" Height="120" Fill="#393E46" VerticalAlignment="Top" Margin="0,-4,0,0" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        
+
+        <Label Content="Papa Brenth's Recipe App" FontSize ="40" HorizontalAlignment="Left" VerticalAlignment="Top" 
+               RenderTransformOrigin="0.126,0.272" Foreground="#00ADB5" FontWeight="Bold" FontFamily="Segoe UI Historic" Height="61" Width="488" Margin="10,46,0,0" Grid.RowSpan="2"/>
+
+        <!---ADD RECIPE BUTTON-->
+
+        <Button   x:Name="btnAddRecipe" Content="Add Recipe" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#EEEEEE" Background="#00ADB5" Height="35" Width="144" Click="btnAddRecipe_Click" Grid.Row="2" Grid.Column="1" Margin="17,0,0,0" Grid.RowSpan="2" />
+
+        <!---DISPLAY ALL RECIPES TEXT AND LABLE-->
+        <Label Grid.Column="0" Content="Search Recipe:"  Foreground="#EEEEEE" FontSize ="15" HorizontalAlignment="Left" Margin="698,35,0,0" 
+               VerticalAlignment="Top" RenderTransformOrigin="-3.215,-0.826" Height="26" Width="108" Grid.RowSpan="2" />
+        <ComboBox Grid.Column="0"  Name="txtSpecificRecipe"  IsEditable="True" HorizontalAlignment="Left" Margin="698,10,0,0" VerticalAlignment="Top" Width="198" Height="37" Grid.Row="1"  />
+
+        <!---DISPLAY ALL RECIPES BUTTON-->
+        <Button  x:Name="btnDisplayAllRecipe" Content="Display All Recipe" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#EEEEEE" Background="#00ADB5" Height="36" Width="144"  Grid.Row="3" Click="btnDisplayAllRecipe_Click" Grid.Column="1" Margin="17,0,0,0" Grid.RowSpan="2" />
+
+        <!---DISPLAY A SPECIFIC RECIPES BUTTON-->
+        <Button  x:Name="btnDisplaySpecificRecipe" Content="Display Specific Recipe" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#EEEEEE" Background="#00ADB5" Height="37" Width="144" Click="btnDisplaySpecificRecipe_Click" Grid.Column="1" Margin="17,10,0,0" Grid.Row="1" />
+
+
+
+        <Button  x:Name="btnAbout" Content="About" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#EEEEEE" Background="#00ADB5" Height="37" Width="144" Click="btnAbout_Click" Grid.Column="1" Margin="17,0,0,0" />
+
+
+
+
+
+        <!---CLEAR RECIPES BUTTON-->
+        <Button Grid.Column="1"  x:Name="btnClearRecipe" Content="Clear All Recipe" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#393E46" Foreground="#EEEEEE" Height="35" Width="144"  Grid.Row="5" Click="btnClearRecipe_Click" Margin="17,24,0,0" />
+
+
+
+
+        <!---Exit BUTTON-->
+        <Button  x:Name="btnExit" Content="Exit" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#393E46" Foreground="#EEEEEE"  Height="36" Width="144"  Grid.Row="7" Click="btnExit_Click" Grid.Column="1" Margin="17,60,0,0" Grid.RowSpan="2" />
+        <!---LIST BOX-->
+        <ListBox x:Name="lstDisplayDetails" FontSize="13" Margin="10,77,0,10" BorderBrush="#222831" Grid.RowSpan="8" Grid.Row="1"/>
+
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden">
+            <!-- Your other content goes here -->
+        </Frame>
+    </Grid>
+</Window>
